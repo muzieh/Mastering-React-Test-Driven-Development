@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppointmentsDayView snapshot test 1`] = `
+<div
+  id="appointmentsDayView"
+>
+  <ol>
+    <li>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        12:00
+      </button>
+    </li>
+    <li>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        13:00
+      </button>
+    </li>
+  </ol>
+  <div>
+    <h2>
+      12:00
+    </h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            Ashley
+          </td>
+          <td />
+          <td>
+            Ben Shapiro
+          </td>
+          <td>
+            perm
+          </td>
+          <td>
+            some note
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
