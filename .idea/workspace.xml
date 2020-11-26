@@ -23,9 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43e08998-c9e9-42df-a287-365be1bea981" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appointments/test/domManipulator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointments/src/CustomerForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointments/test/CustomerForm.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointments/test/AppointmentsDayView.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/appointments/test/AppointmentsDayView.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointments/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/appointments/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +78,11 @@
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/appointments/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="C:\Program Files (x86)\Nodist\npmv\6.14.9" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\marcin.owerczuk\source\repos\Mastering-React-Test-Driven-Development\appointments\node_modules\prettier" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\muzie\source\Mastering-React-Test-Driven-Development\appointments\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.testw">
     <configuration name="Appointment" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -92,20 +93,6 @@
       <test-file value="$PROJECT_DIR$/appointments/test/AppointmentsDayView.test.js" />
       <test-names>
         <test-name value="Appointment" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppointmentsDayView.snapshot test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/appointments/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/appointments" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/appointments/test/AppointmentsDayView.test.js" />
-      <test-names>
-        <test-name value="AppointmentsDayView" />
-        <test-name value="snapshot test" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -132,13 +119,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="testw" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/appointments/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="testw" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.testw" />
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Jest.Appointment" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="Jest.AppointmentsDayView.snapshot test" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +150,7 @@
       <workItem from="1606242381953" duration="6296000" />
       <workItem from="1606286752582" duration="3821000" />
       <workItem from="1606420280139" duration="1832000" />
+      <workItem from="1606426589474" duration="2577000" />
     </task>
     <task id="LOCAL-00001" summary="Webstorm files">
       <created>1606242910382</created>
@@ -191,6 +189,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exercises chapter 1 with snapshot testing" />
@@ -220,29 +219,34 @@
     </state>
     <state x="560" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606249030180" />
     <state x="747" y="118" width="1170" height="827" key="CommitChangelistDialog2/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606421141910" />
-    <state x="987" y="369" key="FileChooserDialogImpl" timestamp="1606420749704">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="580" y="254" key="FileChooserDialogImpl" timestamp="1606425461447">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state x="580" y="254" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1606425461447" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606246933900" />
     <state x="987" y="369" key="FileChooserDialogImpl/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606420749704" />
-    <state width="1269" height="401" key="GridCell.Tab.0.bottom" timestamp="1606422040131">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1483" height="256" key="GridCell.Tab.0.bottom" timestamp="1606428329918">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state width="1483" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1606428329918" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606290485069" />
     <state width="1269" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606422040131" />
-    <state width="1269" height="401" key="GridCell.Tab.0.center" timestamp="1606422040130">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1483" height="256" key="GridCell.Tab.0.center" timestamp="1606428329917">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state width="1483" height="256" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1606428329917" />
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606290485069" />
     <state width="1269" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606422040130" />
-    <state width="1269" height="401" key="GridCell.Tab.0.left" timestamp="1606422040129">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1483" height="256" key="GridCell.Tab.0.left" timestamp="1606428329917">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state width="1483" height="256" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1606428329917" />
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606290485069" />
     <state width="1269" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606422040129" />
-    <state width="1269" height="401" key="GridCell.Tab.0.right" timestamp="1606422040130">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1483" height="256" key="GridCell.Tab.0.right" timestamp="1606428329918">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state width="1483" height="256" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1606428329918" />
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606290485069" />
     <state width="1269" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606422040130" />
     <state width="1269" height="492" key="GridCell.Tab.1.bottom" timestamp="1606422006415">
@@ -305,9 +309,10 @@
     </state>
     <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606248079917" />
     <state width="1269" height="492" key="GridCell.Tab.3.right/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606422006416" />
-    <state x="615" y="221" key="SettingsEditor" timestamp="1606420754199">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="361" y="152" key="SettingsEditor" timestamp="1606427949816">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state x="361" y="152" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1606427949816" />
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606289581879" />
     <state x="615" y="221" key="SettingsEditor/0.0.2560.1400/-3840.-349.1920.1040@0.0.2560.1400" timestamp="1606420754199" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1606287775140">
@@ -318,6 +323,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606249045978" />
+    <state x="577" y="315" key="jetbrains.nodejs.interpreters-dialog" timestamp="1606426283081">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="577" y="315" key="jetbrains.nodejs.interpreters-dialog/0.0.1504.963@0.0.1504.963" timestamp="1606426283081" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606289575643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
