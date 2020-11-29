@@ -22,5 +22,12 @@ describe('CustomerForm', () => {
     expect(field).not.toBeNull();
     expect(field.tagName).toEqual('INPUT');
     expect(field.type).toEqual('text');
+    expect(field.name).toEqual('firstName');
+  });
+
+  it('contains first name in input field for initial load', () => {
+    render(<CustomerForm firstName="Ashley" />);
+    const field = form('customer').elements.firstName;
+    expect(field.value).toEqual('Ashley');
   });
 });
