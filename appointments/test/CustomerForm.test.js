@@ -21,6 +21,17 @@ describe('CustomerForm', () => {
     expect(form('customer')).not.toBeNull();
   });
 
+  it('renders submit button', () => {
+    render(<CustomerForm />);
+    expect(
+      form('customer').querySelector('input[type=submit]')
+    ).not.toBeNull();
+    expect(
+      form('customer').querySelector('input[type=submit]')
+        .value
+    ).toEqual('Add');
+  });
+
   function itRendersAsATextInput(fieldName) {
     it('renders as a text input', () => {
       render(<CustomerForm />);

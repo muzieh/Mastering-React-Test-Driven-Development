@@ -49,6 +49,7 @@ export const CustomerForm = ({
         value={customer.phoneNumber}
         onChange={handleChange}
       />
+      <input type='submit' value='Add' />
     </form>
   );
 };
