@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "testw": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "babel-loader": "^8.0.5",
     "faker": "^4.1.0",
     "jest": "^24.1.0",
+    "prettier": "^2.2.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
