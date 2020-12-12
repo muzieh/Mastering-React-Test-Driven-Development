@@ -19,6 +19,13 @@ describe('AppointmentForm', () => {
     return form('appointment').elements[name];
   }
 
+  function findOption(dropdownNode, textContent) {
+    const options = Array.from(dropdownNode.childNodes);
+    return options.find(
+      (option) => option.textContent === textContent
+    );
+  }
+
   describe('sevice field', () => {
     it('renders service field', () => {
       render(<AppointmentForm />);
@@ -31,7 +38,36 @@ describe('AppointmentForm', () => {
       const firstNode = field('service').childNodes[0];
       expect(firstNode.value).toEqual('');
       expect(firstNode.selected).toBeTruthy();
+    });
 
+    it('lists list of all saloon services', () => {
+      const selectableServices = ['service 1', 'cut & dry'];
+
+      render(
+        <AppointmentForm selectableServices={selectableServices} />
+      );
+      const optionNodes = Array.from(field('service').childNodes);
+      const renderedServices = optionNodes.map(
+        (node) => node.textContent
+      );
+      expect(renderedServices).toEqual(
+        expect.arrayContaining(selectableServices)
+      );
+    });
+
+    it('pre-selects the existing service', () => {
+      const selectableServices = ['service 1', 'cut&dry'];
+      render(
+        <AppointmentForm
+          selectableServices={selectableServices}
+          service='cut&dry'
+        />
+      );
+      const selectedOption = findOption(
+        field('service'),
+        'cut&dry'
+      );
+      expect(selectedOption.selected).toBeTruthy();
     });
   });
 });
